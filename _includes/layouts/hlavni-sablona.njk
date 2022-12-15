@@ -9,8 +9,11 @@
 </head>
 
 <body>
-    <p>Hlavní šablona</p>
-    <h1>ejneodneěodneodn</h1>
+    {% include 'partials/menu.njk'%}
+    {% include 'partials/header.njk'%}
+
+
+    <h1>proper header</h1>
     {{content | safe }}
 </body>
 </html>
