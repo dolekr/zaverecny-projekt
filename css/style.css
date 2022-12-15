@@ -1,0 +1,7 @@
+html { box-sizing: border-box; }
+*, ::after, ::before { box-sizing: inherit; }
+
+p {
+    color:rgb(54, 185, 37);
+    font-size: large;
+}
