@@ -599,3 +599,12 @@ h3,
         grid-template-rows: 1 / 2;
     }
 }
+
+/* --------------------------- mobile CHATA ---------------------------*/
+.chata {
+    min-height: 50vh;
+    background-color: var(--primary-dark);
+    color: var(--primary-light);
+    padding: 20vh;
+    text-align: center;
+}
