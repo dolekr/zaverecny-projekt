@@ -1,7 +1,135 @@
 html { box-sizing: border-box; }
 *, ::after, ::before { box-sizing: inherit; }
 
-p {
-    color:rgb(54, 185, 37);
-    font-size: large;
+:root {
+    --primary-dark:#111111;
+    --primary-light: #EFEFEF;
+    --secondary-dark: #386641;
+    --secondary-light: #C6C173;
+    --highlight: #B44650; 
+    --regular: 'Montserrat', sans-serif;
+    --heading: 'Cantarell', sans-serif;
 }
+
+/* --------------------------- BASICS ---------------------------*/
+body {
+	margin: 0;
+    padding: 0;
+    background-color: var(--primary-light);
+}
+
+h1,
+h2,
+h3 {
+    color: var(--primary-dark);
+    font-family: var(--heading);
+    font-weight: 700;
+}
+table,
+p {
+    font-family: var(--regular);
+    font-size: small;
+}
+
+
+
+/* --------------------------- mobile MENU ---------------------------*/
+
+.menu__logo img {
+	max-width: 130px;
+	display: flex;
+    flex: 1 1 auto;
+}
+
+.menu__logo {
+    padding: 0 10px 0 30px;
+}
+
+.menu__container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 0px;
+	width: 1100px;
+	max-width: 1100px;
+}
+
+.menu__list {
+	margin: 0;
+	padding: 10px 15px;
+	display: flex;
+    flex-wrap: wrap;
+	list-style: none;
+	text-decoration: none;
+	color: var(--primary-light);
+    font-family: var(--heading);
+}
+
+.menu {
+	background-color: var(--primary-dark);
+	display: flex;
+	justify-content: center;
+
+}
+
+.menu__list :hover {
+	background-color: var(--primary-light);
+	border-radius: 40px;
+	color: var(--secondary-dark);
+    
+}
+
+
+/* -----desktop----*/
+
+@media screen and (min-width: 650px) {
+
+}
+
+
+
+/* ---------------------------mobile HEADER ---------------------------*/
+
+.header {
+        display: none;
+        }
+
+/* -----desktop----*/
+@media screen and (min-width: 650px) {
+    .header {
+        display: flex;
+        height: 90vh;
+        background-image: url(/images/header.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: var(--primary-dark);
+        background-position: 50% 100%;
+    }
+    
+    .header__logo img {
+        position: absolute;
+        left: 50vw;
+        top: 35%;
+        width: 300px;
+    }
+}
+
+/* --------------------------- FOOTER ---------------------------*/
+
+.footer {
+    background-color: var(--primary-dark);
+    color: var(--primary-light);
+    padding: 0 15% 0 15%;
+    position: relative;
+    bottom: 100%;
+}
+
+/* --------------------------- TŘÍDA CONTENT ---------------------------*/
+.content {
+    padding: 0 200px 0 200px;
+}
+
+/* --------------------------- XXX ---------------------------*/
+
+
+/* --------------------------- XXX ---------------------------*/
